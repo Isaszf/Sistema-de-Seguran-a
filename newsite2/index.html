@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como hackers realmente invadem sistemas?</title>
+</head>
+
+    <link rel="stylesheet" href="style.css">
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#metodos">Métodos</a>
+    <a href="#ferramentas">Ferramentas</a>
+    <a href="#protecao">Proteção</a>
+    <a href="#casos">Casos</a>
+</nav>
+    
+    <section id="home">
+
+        <h1>Como hackers realmente invadem Sistemas? </h1>
+
+            <p class="lass="frase-convite"">Muita gente acredita que está segura na internet só porque não tem nada a esconder. Mas a verdade é que, no mundo digital, o que você não sabe é exatamente o que os hackers usam contra você. Entender como um ataque acontece não é para especialistas, é para quem quer retomar o controle da própria privacidade. Aprenda como eles pensam, veja como eles agem e pare de ser o alvo mais fácil da rede.</p>
+            <img src="h11.jpg" >
+            <blockquote>Entenda como os hackers atacam e aprenda a se defender.</blockquote>
+
+    </section>
+
+    
+    <section id="metodos">
+
+        <h2>Métodos de Invasão</h2>
+    
+    <div class="container-cards">
+
+        <div class="card">
+            <h3>SQL Injection (Injeção de SQL)</h3>
+            <img src="hacker2.jpg">
+            <p>Ocorre quando um invasor insere comandos maliciosos em campos de formulários (como login) para manipular o banco de dados e acessar dados sigilosos.</p>
+            <span><strong>Exemplo:</strong>Em vez de digitar um nome de usuário, o invasor digita ' OR '1'='1, enganando o sistema para permitir o acesso sem uma senha válida.</span>
+        </div>
+
+        <div class="card">
+            <h3>XSS (Cross-Site Scripting)</h3>
+            <img src="h14.jpg">
+            <p>O invasor injeta scripts maliciosos (geralmente JavaScript) em páginas web legítimas para que eles sejam executados no navegador de outros usuários, roubando cookies ou sessões.</p>
+            <span><strong>Exemplo:</strong>Um invasor posta um comentário em um blog contendo um código que, quando lido por outros usuários, envia a senha deles automaticamente para o servidor do hacker.</span>
+        </div>
+
+        <div class="card">
+            <h3>Engenharia Social</h3>
+            <img src="h4.jpg">
+            <p>O que é: É a manipulação psicológica de pessoas para que elas divulguem informações confidenciais ou realizem ações como baixar arquivos perigosos.</p>
+            <span><strong>Exemplo:</strong>Alguém liga para um funcionário fingindo ser do suporte técnico e pede a senha dele para "corrigir um erro urgente no sistema".</span>
+        </div>
+
+        <div class="card">
+            <h3>Força Bruta (Brute Force)</h3>
+            <img src="hh5.jpg">
+            <p>Uma técnica de tentativa e erro onde softwares testam milhares de combinações de senhas por segundo até encontrar a correta.</p>
+            <span><strong>Exemplo:</strong>Um programa tenta sucessivamente as senhas "123456", "admin", "senha1" até conseguir entrar na conta de um usuário.</span>
+        </div>
+
+        <div class="card">
+            <h3>Phishing</h3>
+            <img src="h6.jpg">
+            <p>O envio de mensagens fraudulentas (e-mail, SMS) que fingem ser de fontes confiáveis para enganar a vítima e obter dados como cartões de crédito.</p>
+            <span><strong>Exemplo:</strong>Você recebe um e-mail falso do seu banco dizendo que sua conta será bloqueada se você não clicar em um link e "confirmar seus dados".</span>
+        </div>
+
+        <div class="card">
+            <h3>Ransomware</h3>
+            <img src="h7.jpg">
+            <p>Um tipo de malware que criptografa os arquivos da vítima, tornando-os inacessíveis, e exige o pagamento de um "resgate" (geralmente em criptomoedas) para liberá-los.</p>
+            <span><strong>Exemplo:</strong> Uma empresa clica em um anexo malicioso e, minutos depois, todos os seus documentos estão bloqueados com um aviso de que devem pagar R$ 50.000 para recuperá-los.</span>
+        </div>
+
+        <div class="card">
+            <h3>Ataques a APIs</h3>
+            <img src="h8.jpg"
+            <p>Explora vulnerabilidades na comunicação entre diferentes softwares (APIs), tentando interceptar dados ou realizar ações não autorizadas entre o aplicativo e o servidor.</p>
+            <span><strong>Exemplo:</strong> Um invasor altera o ID do usuário na URL de uma requisição de aplicativo para visualizar os dados bancários de outra pessoa em vez dos seus.</span>
+        </div>
+
+        <div class="card">
+            <h3>Vulnerabilidades CVE</h3>
+            <img src="h9.jpg"
+            <p>CVE (Common Vulnerabilities and Exposures) é uma lista pública de falhas de segurança conhecidas em softwares. Invasores buscam sistemas que ainda não foram atualizados para explorar essas falhas.</p>
+            <span><strong>Exemplo:</strong> Um hacker descobre que uma empresa usa uma versão antiga do Windows que possui a vulnerabilidade CVE-2017-0144 (WannaCry) e a invade por ali.</span>
+        </div>
+
+        <div class="card">
+            <h3>Exploits Automatizados</h3>
+            <img src="h10.jpg"
+            <p>São ferramentas ou scripts prontos que procuram e atacam vulnerabilidades automaticamente, sem que o hacker precise fazer cada passo manualmente.</p>
+            <span><strong>Exemplo:</strong> O uso do framework Metasploit, que permite selecionar uma vulnerabilidade conhecida e disparar um "ataque pronto" contra um servidor alvo com apenas um clique.</span>
+        </div>
+    </div>
+    </section>
+
+<script src="script.js"></script>
+
+    <section id="ferramentas"></section>
+
+        <h2>Ferramentas p </h2>
+            <table>
+                <thead>
+                        <tbody>
+                    <tr>
+                        <th>Ferramenta</th>
+                        <th>Para que serve</th>
+                        <th>Como ajuda no ataque</th>
+                        <th>Defesa</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td>Nmap (Network Mapper)</td>
+                        <td>Identificar dispositivos ativos em uma rede, descobrir portas abertas e detectar sistemas operacionais ou serviços (versões de software).</td>
+                        <td>Permite o mapeamento da superfície de ataque. O hacker descobre exatamente quais portas estão "escuta</td>
+                        <td>Configurar firewalls para bloquear tráfego desnecessário, desativar serviços não utilizados e implementar sistemas de detecção de intrusão (IDS) que alertem sobre varreduras de portas.</td>
+                    </tr>
+                        </tbody>
+            </table>
+
+
+
+            <table>
+                <tr>
+                    <td> Metasploit Framework</td>
+                    <td>Automação da exploração de vulnerabilidades conhecidas em sistemas e redes.</td>
+                    <td>Uma vez que o hacker identifica uma vulnerabilidade (via Nmap, por exemplo), ele usa o Metasploit para entregar a carga útil (payload), ganhando acesso remoto ao sistema da vítima.</td>
+                    <td>Manter todos os sistemas e softwares atualizados (patch management), pois o Metasploit foca principalmente em falhas já documentadas e corrigidas por fabricantes.</td>
+                </tr>
+            </table>    
+
+
+
+            <table>
+                <tr>
+                    <td>Kali Linux</td>
+                    <td>Fornecer um ambiente de trabalho completo e otimizado para testes de invasão e perícia digital.</td>
+                    <td>Centraliza todas as fases do ataque (reconhecimento, exploração, pós-exploração) em um único sistema operacional altamente customizável.</td>
+                    <td>Por ser um SO de ataque, a defesa contra o Kali envolve a defesa em profundidade da rede (firewalls, criptografia e monitoramento de logs) para dificultar a vida de quem o opera.</td>
+                </tr>
+            </table>    
+
+
+
+            <table>
+                 <tr>
+                    <td>Wireshark</td>
+                    <td>Capturar e analisar o tráfego de rede em tempo real (sniffing).</td>
+                    <td>Se o tráfego não estiver criptografado, o hacker pode capturar senhas, cookies de autenticação e informações sensíveis que passam pela rede.</td>
+                    <td>Uso obrigatório de criptografia (HTTPS, SSH, VPN) em todas as comunicações. Se os dados estiverem criptografados, o Wireshark verá apenas códigos ilegíveis.</td>
+                </tr>
+            </table>    
+
+
+            <table>
+                <tr>
+                    <td>Hydra</td>
+                    <td>Realizar ataques de força bruta (brute force) ou ataques de dicionário contra serviços de autenticação (como SSH, FTP, HTTP Form, etc.).</td>
+                    <td>Tenta milhares de combinações de usuários e senhas por minuto até encontrar uma conta válida para invadir o sistema.</td>
+                    <td>Implementar políticas de senhas fortes, autenticação de dois fatores (2FA) e bloqueio de conta (account lockout) após um número específico de tentativas falhas.</td>
+                </tr>
+    </table>
+</section>
+
+   
+    <section id="protecao">
+
+    <h2>Como Proteger um Sistema</h2>
+    <ul>
+
+        <li><strong>​Aplicar Updates:</strong> Manter o sistema operacional e todas as bibliotecas de terceiros atualizados é a defesa número um contra vulnerabilidades conhecidas. Desenvolvedores mal-intencionados exploram falhas em versões antigas que já possuem correções disponíveis.</li>
+
+        <li><strong>Firewalls:</strong>Atuam como uma barreira de segurança que monitora e filtra o tráfego de rede com base em regras predefinidas. Eles impedem que acessos não autorizados cheguem à rede interna, bloqueando pacotes de dados suspeitos.</li>
+
+        <li><strong>Limitar Portas Abertas:</strong>Reduzir a superfície de ataque fechando portas de comunicação que não estão em uso pelo sistema. Quanto menos portas estiverem abertas, menores são as chances de um invasor encontrar uma brecha de entrada.</li>
+
+        <li><strong>Backup Frequente:</strong>Garante a disponibilidade dos dados em caso de ataques de ransomware ou falhas críticas de hardware. Uma rotina de backup bem estruturada permite a recuperação rápida do sistema com o mínimo de perda de informações.</li>
+
+        <li><strong>MFA (Autenticação de Dois Fatores):</strong>Adiciona uma camada extra de segurança exigindo, além da senha, um segundo código enviado por SMS, e-mail ou aplicativo. Isso impede o acesso mesmo que as credenciais do usuário tenham sido roubadas.</li>
+
+        <li><strong>Senhas Fortes:</strong>Incentivar ou exigir o uso de combinações complexas de caracteres dificulta ataques de força bruta. Senhas robustas são a primeira linha de defesa contra o sequestro de contas de usuários e administradores. suspeitos.</li>
+
+        <li><strong>Políticas de Acesso:</strong>Baseiam-se no "princípio do menor privilégio", onde cada usuário possui apenas as permissões necessárias para realizar sua função. Isso limita o estrago potencial caso uma conta individual seja comprometida.</li>
+
+        <li><strong>Criptografia:</strong>Protege a confidencialidade dos dados, transformando informações legíveis em códigos que só podem ser lidos com uma chave específica. Deve ser aplicada tanto aos dados armazenados (at rest) quanto aos dados em trânsito (in transit).</li>
+
+        <li><strong>Validações no Back-end:</strong>Todo dado enviado pelo usuário deve ser verificado no servidor, nunca confiando apenas na validação do navegador. Isso evita que usuários mal-intencionados contornem as regras da interface para enviar dados maliciosos.</li>
+
+        <li><strong>Uso de Prepared Statements:</strong>Atuam como uma barreira de segurança que monitora e filtra o tráfego de rede com base em regras predefinidas. Eles impedem que acessos não autorizados cheguem à rede interna, bloqueando pacotes de dados suspeitos.</li>
+
+    </ul>
+</section>
+
+
+</section>
+   
+ <section id="casos-reais">
+
+    <h2>Caso Real: WannaCry</h2>
+    <p><strong>O que foi:</strong>​O Pegasus é um spyware (software espião) vendido a governos para, teoricamente, combater o crime e o terrorismo. No entanto, investigações jornalísticas revelaram que ele foi usado para monitorar jornalistas, ativistas de direitos humanos e chefes de estado. Uma vez instalado, o invasor tem acesso total a mensagens (mesmo as criptografadas), fotos, e-mails e pode até ativar a câmera e o microfone remotamente sem que o usuário perceba.</p>
+
+    <p><strong>Vulnerabilidade:</strong>​O grande diferencial do Pegasus foi o uso de ataques do tipo "Zero-Click" (Clique Zero), especificamente explorando vulnerabilidades no iMessage (Apple) e WhatsApp.
+​ForcedEntry: Uma das falhas mais famosas permitia que o vírus fosse instalado apenas enviando um arquivo de imagem formatado maliciosamente (.gif ou .pdf) via mensagem.
+​O usuário não precisava clicar em nenhum link; o simples processamento da prévia da imagem pelo sistema operacional já executava o código invasor.</p>
+
+    <p><strong>Impacto:</strong>​O impacto foi global e alarmante, afetando milhares de dispositivos em todo o mundo. Além da quebra total de privacidade de figuras públicas e opositores políticos, o caso forçou gigantes como Apple e Google a lançarem atualizações de segurança emergenciais. O Pegasus demonstrou que, com recursos suficientes, até os sistemas considerados mais seguros podem ser invadidos sem qualquer interação da vítima.</p>
+    
+    <p><strong>Prevenção:</strong>Embora ataques "Zero-Click" sejam extremamente difíceis de deter pelo usuário final, algumas medidas teriam mitigado o risco:
+​Atualizações constantes: A Apple corrigiu as falhas conforme foram descobertas; usuários com sistemas desatualizados ficaram vulneráveis por muito mais tempo.
+​Modo de Isolamento (Lockdown Mode): Introduzido pela Apple após o escândalo, esse modo desativa funções complexas (como prévias de links e certas tecnologias de navegação) que são frequentemente usadas como portas de entrada.
+​Análise de Tráfego: Organizações de segurança poderiam ter detectado conexões suspeitas com os servidores de comando e controle da NSO Group se houvesse um monitoramento de rede rigoroso nos dispositivos corporativos.</p>
+
+</section>
+
+</body>

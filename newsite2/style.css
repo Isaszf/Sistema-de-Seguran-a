@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500&display=swap');
+
+.frase-convite {
+    margin: 40px auto;
+    max-width: 800px;
+    background: #0a0a0a; /* Fundo levemente diferente do preto total */
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #222;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.frase-convite p {
+    font-family: 'Inter', sans-serif; /* Uma fonte mais redonda e fácil de ler que a de código */
+    font-size: 1.15rem;
+    color: #d1d1d1;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.frase-convite strong {
+    color: var(--hacker-green);
+    font-weight: 600;
+}
+
+:root {
+    --bg-black: #050505;
+    --hacker-green: #00ff41;
+    --gray-dim: #1a1a1a;
+    --text-gray: #888;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: white;
+    font-family: 'JetBrains Mono', monospace; /* Fonte elegante de código */
+    line-height: 1.6;
+}
+
+/* Navegação minimalista */
+nav {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-size: 0.75rem;
+    text-transform: lowercase;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: var(--hacker-green);
+}
+
+/* Seções */
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--hacker-green);
+}
+
+.subtitulo {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin-bottom: 50px;
+}
+
+/* Cards Minimalistas */
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.card {
+    border-top: 1px solid var(--gray-dim); /* Apenas uma linha superior */
+    padding-top: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-top-color: var(--hacker-green);
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.card p {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.2); /* Imagens em preto e branco */
+    margin-bottom: 15px;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.card:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.card span {
+    font-size: 0.75rem;
+    color: var(--hacker-green);
+    display: block;
+    border: 1px solid var(--hacker-green);
+    padding: 8px;
+    border-radius: 2px;
+}
+
+/* Container para permitir scroll em celulares */
+.table-container {
+    overflow-x: auto;
+    margin: 40px 0;
+    border: 1px solid var(--gray-dim);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Cabeçalho da Tabela */
+thead th {
+    background-color: var(--gray-dim);
+    color: var(--hacker-green);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid var(--hacker-green);
+}
+
+/* Linhas da Tabela */
+tbody td {
+    padding: 15px;
+    border-bottom: 1px solid var(--gray-dim);
+    color: #ccc;
+    vertical-align: top;
+}
+
+/* Efeito de destaque na linha ao passar o mouse */
+tbody tr {
+    transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 255, 65, 0.05);
+}
+
+/* Coluna de destaque (Nome da Ferramenta) */
+tbody td:first-child {
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilização para as células de Defesa (Dando um toque de segurança) */
+tbody td:last-child {
+    color: #4da6ff; /* Azul suave para diferenciar defesa de ataque */
+    font-style: italic;
+}
+
+/* Responsividade: em telas pequenas a tabela não quebra */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.75rem;
+    }
+    thead th, tbody td {
+        padding: 10px;
+    }
+}
+/* Caso Real */
+#casos-reais {
+    border: 1px solid
+}
